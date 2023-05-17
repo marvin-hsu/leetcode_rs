@@ -1,2 +1,3 @@
+mod _1689_partitioning_into_minimum_number_of_deci_binary_numbers;
 mod _2181_merge_nodes_in_between_zeros;
 mod data_struct;
