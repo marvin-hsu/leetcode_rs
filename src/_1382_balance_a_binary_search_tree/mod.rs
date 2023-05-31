@@ -54,17 +54,17 @@ mod test {
     #[test]
     pub fn test_1() {
         let input =
-            TreeNode::create_bst(vec![Some(1), None, Some(2), None, Some(3), None, Some(4)]);
+            TreeNode::create_bst(&vec![Some(1), None, Some(2), None, Some(3), None, Some(4)]);
 
         let expect =
-            TreeNode::create_bst(vec![Some(2), Some(1), Some(3), None, None, None, Some(4)]);
+            TreeNode::create_bst(&vec![Some(2), Some(1), Some(3), None, None, None, Some(4)]);
         assert_eq!(balance_bst(input), expect)
     }
 
     #[test]
     pub fn test_2() {
-        let input = TreeNode::create_bst(vec![Some(2), Some(1), Some(3)]);
-        let expect = TreeNode::create_bst(vec![Some(2), Some(1), Some(3)]);
+        let input = TreeNode::create_bst(&vec![Some(2), Some(1), Some(3)]);
+        let expect = TreeNode::create_bst(&vec![Some(2), Some(1), Some(3)]);
         assert_eq!(balance_bst(input), expect)
     }
 }
