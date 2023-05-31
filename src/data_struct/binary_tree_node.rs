@@ -18,7 +18,6 @@ impl TreeNode {
     }
 
     pub fn create_bst(arr: &Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
-        fn build_tree(arr: &[Option<i32>]) -> Option<Rc<RefCell<TreeNode>>> {
             if let Some(&val) = arr.first() {
                 if val == None {
                     return None;
@@ -55,8 +54,5 @@ impl TreeNode {
             } else {
                 None
             }
-        }
-
-        build_tree(&arr)
     }
 }
