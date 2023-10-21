@@ -12,8 +12,7 @@ pub fn length_of_lis(nums: Vec<i32>) -> i32 {
     // dp.iter().max().unwrap_or(&0).clone()
 
     nums.iter()
-        .enumerate()
-        .fold((Vec::new(), 0), |(mut ddp, mut max), (index, item)| {
+        .fold((Vec::new(), 0), |(mut ddp, max), item| {
             let i = ddp
                 .iter()
                 .zip(nums.iter())
@@ -23,8 +22,7 @@ pub fn length_of_lis(nums: Vec<i32>) -> i32 {
                 .unwrap_or(&0)
                 + 1;
             ddp.push(i);
-            max = i.max(max);
-            (ddp, max)
+            (ddp, i.max(max))
         })
         .1
 }
