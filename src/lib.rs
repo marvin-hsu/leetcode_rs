@@ -6,3 +6,5 @@ mod _1828_queries_on_number_of_points_inside_a_circle;
 mod _2181_merge_nodes_in_between_zeros;
 mod _2396_strictly_palindromic_number;
 mod data_struct;
+
+mod _53_maximum_subarray;
