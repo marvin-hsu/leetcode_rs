@@ -7,4 +7,5 @@ mod _2181_merge_nodes_in_between_zeros;
 mod _2396_strictly_palindromic_number;
 mod data_struct;
 
+mod _300_longest_increasing_subsequence;
 mod _53_maximum_subarray;
