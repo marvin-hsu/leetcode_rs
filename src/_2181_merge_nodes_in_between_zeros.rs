@@ -24,7 +24,7 @@ fn merge_nodes_ref(head: &Option<Box<ListNode>>) -> Option<Box<ListNode>> {
                         val: node.val,
                         next: next_node,
                     }))
-                //// 如果下一個節點不為0，則與前面保存遞迴結果的第一項相加得到新的節點
+                    //// 如果下一個節點不為0，則與前面保存遞迴結果的第一項相加得到新的節點
                 } else {
                     Some(Box::new(ListNode {
                         val: node.val + next_node.as_ref().unwrap().val,
